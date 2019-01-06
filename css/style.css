@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+body{
+    margin: 0;
+}
+
+.full_size{
+    width: 1920px;
+    height: 1080px;
+}
+
+#cover{
+    background-image: url(../img/background-01.jpg);
+    background-size: cover;
+}
+
+.tj_background{
+    width: 1920px;
+    height: 1080px;
+    background-image: url(../img/background_lowpoly-green.jpg);
+    background-size: cover;
+}
+
+.tjpic{
+    width: 800px;
+    height: 1080px;
+    background-color: #fff;
+}
+
+#tjpic01{
+    background-image: url(../img/tjpic01.jpg);
+    background-size: cover;
+    background-position: -400px;
+}
+#tjpic02{
+    background-image: url(../img/tjpic02.jpg);
+    background-size: cover;
+    background-position: right;
+}
+#tjpic03{
+    background-image: url(../img/tjpic03.jpg);
+    background-size: cover;
+    background-position: -300px;
+}
+#tjpic04{
+    background-image: url(../img/tjpic04.jpg);
+    background-size: cover;
+    background-position: 0px -75px;
+}
+
+.scout_background{
+    width: 1920px;
+    height: 1080px;
+    background-image: url(../img/background_lowpoly-purple.jpg);
+    background-size: cover;
+}
+
+.scoutbox{
+    width: 1600px;
+    height: 1080px;
+    float: right;
+}
+
+.scoutpic{
+    width: 1170px;
+    height: 658px;
+    margin: auto;
+}
+
+#scoutpic01{
+    background-image: url(../img/scoutpic01.jpg);
+    background-attachment: fixed;
+}
