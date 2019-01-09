@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navigation.css">
     <title>Scout Group of Tung-Ji High School</title>
 </head>
+
 <body>
-    <div id="container" >
-        <div id="cover" class="full_size"></div>
+
+    <div id="container">
+        <!-- 首頁 -->
+        <div id="cover" class="full_size crossfade"></div>
+        <!-- 同濟童軍團 -->
         <div id="tjScout">
             <div class="tjScout tj_background">
                 <div id="tjpic01" class="tjpic"></div>
@@ -28,42 +34,152 @@
                 <div class="tjtext"></div>
             </div>
         </div>
+        <!-- 童軍 -->
         <div id="scout">
             <div class="scout scout_background">
-                <div class="scoutbox">
+                <div class="scout_box">
                     <div id="scoutpic01" class="scoutpic"></div>
                 </div>
             </div>
             <div class="scout scout_background">
-                <div class="scoutbox">
+                <div class="scout_box">
                     <div id="scoutpic02" class="scoutpic"></div>
                 </div>
             </div>
             <div class="scout scout_background">
-                <div class="scoutbox">
+                <div class="scout_box">
                     <div id="scoutpic03" class="scoutpic"></div>
                 </div>
             </div>
             <div class="scout scout_background">
-                <div class="scoutbox">
+                <div class="scout_box">
                     <div id="scoutpic04" class="scoutpic"></div>
                 </div>
             </div>
             <div class="scout scout_background">
-                <div class="scoutbox">
+                <div class="scout_box">
                     <div id="scoutpic05" class="scoutpic"></div>
                 </div>
             </div>
             <div class="scout scout_background">
-                <div class="scoutbox">
+                <div class="scout_box">
                     <div id="scoutpic06" class="scoutpic"></div>
                 </div>
             </div>
         </div>
-        <div id="campService"></div>
-        <div id="specialEvent"></div>
+        <!-- 營隊服務 -->
+        <div id="campService">
+        </div>
+        <!-- 特別活動 -->
+        <div id="specialEvent">
+            <div class="specialEvent_box">
+                <div class="specialEvent_inbox">
+                    <div id="UK">
+                        <div id="UKtext" class="UKl"></div>
+                        <div id="UKpicS01" class="UKs"></div>
+                        <div id="UKpicS02" class="UKs"></div>
+                        <div id="UKpicS03" class="UKs"></div>
+                        <div id="UKpisL" class="UKl"></div>
+                        <div id="UKpicS04" class="UKs"></div>
+                    </div>
+                    <div id="HK">
+                        <div id="HKpicS01" class="HKs"></div>
+                        <div id="HKtext" class="HKl"></div>
+                        <div id="HKpicS02" class="HKs"></div>
+                        <div id="HKpisL" class="HKl"></div>
+                        <div id="HKpicS03" class="HKs"></div>
+                        <div id="HKpicS04" class="HKs"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 樹屋 -->
         <div id="treeHouse"></div>
     </div>
-    
+
+    <!--end modal-->
+    <div class="dot-navigation-block">
+        <ul class="_list">
+            <li class="active">
+                <a href="#tjScout"><span class="__circle">&nbsp;</span> 同濟童軍團 </a>
+            </li>
+            <li>
+                <a href="#scout"><span class="__circle">&nbsp;</span> 關於童軍 </a>
+            </li>
+            <li>
+                <a href="#campService"><span class="__circle">&nbsp;</span> 營隊服務 </a>
+            </li>
+            <li>
+                <a href="#specialEvent"><span class="__circle">&nbsp;</span> 特別活動 </a>
+            </li>
+            <li>
+                <a href="#treeHouse"><span class="__circle">&nbsp;</span> 樹屋 </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- JS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <!-- 滾動模糊 -->
+    <script src="js/crossfade.jquery.js"></script>
+    <script>
+        $(function () {
+            $('.crossfade').crossfade(options);
+        });
+        $(function () {
+            // Initialize both crossfade examples
+            $('.crossfade').crossfade({
+                start: 'img/background.jpg',
+                end: 'img/background-blur.jpg',
+                threshold: 0.2,
+                backgroundPosition: 'center center'
+            });
+        });
+    </script>
+
+    <!-- menu -->
+    <Script>
+        function checkScrollPosition() {
+            var navBlock = $('.dot-navigation-block');
+            var scrollPos = $(document).scrollTop();
+            navBlock.find('a').each(function () {
+                // If window was move over block positon
+                var block = $($(this).attr('href'));
+                if ((block.position().top) <= scrollPos + 5 && (block.position().top) + block.height() >
+                    scrollPos + 5) {
+                    // remove all active class and add active to the only one we want
+                    navBlock.find('li').removeClass('active');
+                    $(this).parent('li').addClass('active');
+                } else {
+                    $(this).parent('li').removeClass('active');
+                }
+            });
+        }
+
+
+        $(window).on('scroll', function () {
+            checkScrollPosition();
+        });
+
+
+        $(document).ready(function () {
+            var navBlock = $('.dot-navigation-block');
+            navBlock.find('a').on('click', function (e) {
+                e.preventDefault();
+                $(document).off('scroll');
+                // Get block distance from top of browser
+                var block = $(this).attr('href');
+                var blockPosition = $(block).offset().top;
+                // Animate window to that position
+                $('html, body').animate({
+                    scrollTop: blockPosition
+                }, 600, 'swing', function () {
+                    checkScrollPosition();
+                });
+            });
+        });
+    </Script>
 </body>
+
 </html>

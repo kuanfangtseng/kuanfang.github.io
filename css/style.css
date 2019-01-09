@@ -5,25 +5,21 @@ body{
 }
 
 .full_size{
-    width: 1920px;
-    height: 1080px;
+    width: 100%;
+    height: 100vh;
 }
 
-#cover{
-    background-image: url(../img/background-01.jpg);
-    background-size: cover;
-}
 
 .tj_background{
-    width: 1920px;
-    height: 1080px;
+    width: 100%;
+    height: 100vh;
     background-image: url(../img/background_lowpoly-green.jpg);
     background-size: cover;
 }
 
 .tjpic{
-    width: 800px;
-    height: 1080px;
+    width: 40%;
+    height: 100vh;
     background-color: #fff;
 }
 
@@ -45,29 +41,164 @@ body{
 #tjpic04{
     background-image: url(../img/tjpic04.jpg);
     background-size: cover;
-    background-position: 0px -75px;
+    background-position: 0px -30px;
 }
 
 .scout_background{
-    width: 1920px;
-    height: 1080px;
+    width: 100%;
+    height: 100vh;
     background-image: url(../img/background_lowpoly-purple.jpg);
     background-size: cover;
+    display: flex;
+    justify-content:flex-end;
 }
 
-.scoutbox{
-    width: 1600px;
-    height: 1080px;
-    float: right;
+.scout_box{
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .scoutpic{
-    width: 1170px;
-    height: 658px;
-    margin: auto;
+    width: 75%;
+    height: 60vh;
 }
 
 #scoutpic01{
     background-image: url(../img/scoutpic01.jpg);
+    background-size: cover;
     background-attachment: fixed;
 }
+
+#scoutpic02{
+    background-image: url(../img/scoutpic02.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#scoutpic03{
+    background-image: url(../img/scoutpic03.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#scoutpic04{
+    background-image: url(../img/scoutpic04.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#scoutpic05{
+    background-image: url(../img/scoutpic05.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#scoutpic06{
+    background-image: url(../img/scoutpic06.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#specialEvent{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/background_lowpoly-red.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content:flex-end;
+}
+
+.specialEvent_box{
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.specialEvent_inbox{
+    width: 75%;
+    height: 60vh;
+    display: flex;
+    justify-content:flex-start;
+}
+
+#UK{
+    width: 50%;
+    height: 60vh;
+}
+
+.UKl{
+    width: 66%;
+    height: 30vh;
+    background-color: pink;
+}
+
+.UKs{
+    width: 34%;
+    height: 15vh;
+    background-color: rgb(218, 0, 36);
+}
+
+#UKpicS01,
+#UKpicS02,
+#UKpisL{
+    float: right;
+}
+
+#UKtext,
+#UKpicS03,
+#UKpicS04{
+    float: left;
+}
+
+#UKpicS03{
+    clear: right;
+}
+
+#UKpicS04{
+    clear: left;
+}
+
+#HK{
+    width: 50%;
+    height: 60vh;
+    background-color: #333;
+}
+
+.HKl{
+    width: 66%;
+    height: 30vh;
+    background-color: pink;
+}
+
+.HKs{
+    width: 34%;
+    height: 15vh;
+    background-color: rgb(218, 0, 36);
+}
+
+#HKpicS01,
+#HKpicS02,
+#HKpicS03,
+#HKpicS04,
+#HKpisL{
+    float: left;
+}
+
+#HKtext{
+    float: right;
+}
+
+#HKpicS01{
+    clear: right;
+}
+
+#HKpicS02{
+    clear: left;
+}
+
+
