@@ -1,32 +1,48 @@
 @charset "utf-8";
-
+/* 全域 */
 body{
     margin: 0;
+    font-family: Microsoft JhengHei;
 }
 
-.full_size{
-    width: 100%;
-    height: 100vh;
+p{
+    font-size: 16px;
 }
 
+.blur{
+    background: rgba(255, 255, 255, 0.2);
+    float: none;
+}
 
-.tj_background{
-    width: 100%;
-    height: 100vh;
-    background-image: url(../img/background_lowpoly-green.jpg);
+.flex_center_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-direction_column{
+    flex-direction: column;
+}
+
+/* cover */
+#cover{
+    background-image: url(../img/background.jpg);
     background-size: cover;
 }
 
-.tjpic{
-    width: 40%;
-    height: 100vh;
-    background-color: #fff;
+/* 同濟童軍團 */
+.tj_background{
+    background-image: url(../img/background_lowpoly-green.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
 }
+
 
 #tjpic01{
     background-image: url(../img/tjpic01.jpg);
     background-size: cover;
-    background-position: -400px;
+    background-position: right;
 }
 #tjpic02{
     background-image: url(../img/tjpic02.jpg);
@@ -36,34 +52,46 @@ body{
 #tjpic03{
     background-image: url(../img/tjpic03.jpg);
     background-size: cover;
-    background-position: -300px;
 }
 #tjpic04{
     background-image: url(../img/tjpic04.jpg);
     background-size: cover;
-    background-position: 0px -30px;
 }
 
+.tjtext{
+    padding: 5%;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+}
+
+.tjtext pre{
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.tjtext H1{
+    text-shadow: -3px -3px 3px rgba(255, 255, 255, 0.8);
+}
+
+.tjtext H5{
+    text-align: right;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+}
+
+/* 童軍 */
 .scout_background{
-    width: 100%;
-    height: 100vh;
     background-image: url(../img/background_lowpoly-purple.jpg);
     background-size: cover;
-    display: flex;
-    justify-content:flex-end;
+    
 }
 
-.scout_box{
-    width: 80%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.scoutpic{
-    width: 75%;
-    height: 60vh;
+.scoutpic H1{
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    padding: 2px;
 }
 
 #scoutpic01{
@@ -102,103 +130,124 @@ body{
     background-attachment: fixed;
 }
 
-#specialEvent{
-    width: 100%;
-    height: 100vh;
-    background-image: url(../img/background_lowpoly-red.jpg);
-    background-size: cover;
-    display: flex;
-    justify-content:flex-end;
+.scoutpic{
+    cursor: pointer;
 }
 
-.specialEvent_box{
-    width: 80%;
-    height: 100vh;
+/* 營隊服務 */
+.campService_background{
+    background-image: url(../img/background_lowpoly-yellow.jpg);
+    background-size: 100%;
+    background-repeat: repeat-y;
+}
+
+#campService{
+    width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
-.specialEvent_inbox{
-    width: 75%;
-    height: 60vh;
+
+
+#campService_header p{
+    text-align: center;
+}
+
+/* 特別活動 */
+.specialEvent_background{
+    background-image: url(../img/background_lowpoly-red.jpg);
+    background-size: cover;
+}
+
+#specialEvent{
     display: flex;
-    justify-content:flex-start;
+    justify-content:space-around;
 }
 
-#UK{
-    width: 50%;
-    height: 60vh;
+.specialEvent_header{
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+}
+.specialEvent_inbox{
+    display: flex;
 }
 
-.UKl{
-    width: 66%;
-    height: 30vh;
-    background-color: pink;
-}
-
-.UKs{
-    width: 34%;
-    height: 15vh;
-    background-color: rgb(218, 0, 36);
-}
-
+#HKtext,
+#HKpicS03,
+#HKpicS04,
 #UKpicS01,
 #UKpicS02,
-#UKpisL{
-    float: right;
-}
-
-#UKtext,
 #UKpicS03,
-#UKpicS04{
+#UKpicS04,
+#UKpicL{
     float: left;
-}
-
-#UKpicS03{
-    clear: right;
-}
-
-#UKpicS04{
-    clear: left;
-}
-
-#HK{
-    width: 50%;
-    height: 60vh;
-    background-color: #333;
-}
-
-.HKl{
-    width: 66%;
-    height: 30vh;
-    background-color: pink;
-}
-
-.HKs{
-    width: 34%;
-    height: 15vh;
-    background-color: rgb(218, 0, 36);
 }
 
 #HKpicS01,
 #HKpicS02,
-#HKpicS03,
-#HKpicS04,
-#HKpisL{
-    float: left;
-}
-
-#HKtext{
+#HKpicL,
+#UKtext{
     float: right;
 }
 
-#HKpicS01{
+#HKpicS03,
+#UKpicS01{
     clear: right;
 }
 
-#HKpicS02{
+#HKpicS04,
+#UKpicS02{
     clear: left;
+}
+
+.HKUK-L,
+.HKUK-S{
+    border-style: solid;
+    border-color: rgba(245, 95, 130, 0.5);
+    border-width: 5px;
+    border-radius: 5px;
+}
+
+#HKtext{
+    border-width: 10px 5px 5px 10px;
+    background-color: rgba(35, 0, 5, 0.5);
+}
+#UKtext{
+    border-width: 10px 10px 5px 5px;
+    background-color: rgba(35, 0, 5, 0.5);
+}
+#HKpicS01,
+#UKpicS01{
+    border-width: 10px 5px 5px 5px;
+}
+#HKpicL,
+#UKpicL{
+    border-width: 5px 5px 10px 5px;
+}
+#HKpicS03{
+    border-width: 5px 5px 5px 10px;
+}
+#HKpicS04{
+    border-width: 5px 5px 10px 10px;
+}
+#UKpicS03{
+    border-width: 5px 10px 5px 5px;
+}
+#UKpicS04{
+    border-width: 5px 10px 10px 5px;
+}
+
+
+
+
+/* 樹屋 */
+.treeHouse_background{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/background_lowpoly-blue.jpg);
+    background-size: cover;
 }
 
 
