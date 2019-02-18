@@ -7,9 +7,6 @@
 	display: block;
 }
 
-.popbox_locked .popbox_main_content.popbox_blur{
-	filter:blur(15px);
-}
 
 html.popbox_locked{
     overflow: hidden;
@@ -43,5 +40,5 @@ html.popbox_locked{
 	margin-left:auto;
 	margin-right:auto;
 	background:#fff;
-	max-width: 700px;
+	max-width: 530px;
 }

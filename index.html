@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="stylesheet" href="css/hover.css">
     <link rel="stylesheet" href="css/popbox.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.min.css">
+    <link rel="stylesheet" href="css/timeline-treehouse.css">
+    <link rel="stylesheet" href="css/aos.css">
+
     <title>Scout Group of Tung-Ji High School</title>
 </head>
 
@@ -60,46 +65,46 @@
         </div>
         <!-- 童軍 -->
         <div id="scout">
-                <div class="scout_background full_size">
-                        <div class="blur full_size scout flex_center_center popbox_main_content">
-                            <div data-popbox-id="Scout-popbox" class="popbox ">
-                                <div class="popbox_container">
-                                    <h4>童軍</h4>
-                                    <img src="img/World_Scout.png"></img>
-                                    <button data-popbox-close="Scout-popbox">Close</button>
-                                </div>
-                            </div>
-        
-                            <div id="scoutpic02" class="scoutpic inbox_size flex_center_center" data-popbox-target="Scout-popbox">
-        
-                                <H1>童軍</H1>
-                            </div>
-        
+            <div class="scout_background full_size">
+                <div class="blur full_size scout flex_center_center popbox_main_content">
+                    <div data-popbox-id="Scout-popbox" class="popbox ">
+                        <div class="popbox_container">
+                            <h4>童軍</h4>
+                            <img src="img/World_Scout.png"></img>
+                            <button data-popbox-close="Scout-popbox">Close</button>
                         </div>
                     </div>
 
-            
+                    <div id="scoutpic02" class="scoutpic inbox_size flex_center_center" data-popbox-target="Scout-popbox">
+
+                        <H1>童軍</H1>
+                    </div>
+
+                </div>
+            </div>
+
+
             <!-- 諾言 -->
             <div class="scout_background full_size">
-                    <div class="blur full_size scout flex_center_center popbox_main_content">
-                        <div data-popbox-id="scoutPromise-popbox" class="popbox ">
-                            <div class="popbox_container">
-                                <h4>中華民國童軍諾言：</h4>
-                                <pre>憑我的榮譽，我願盡力遵守童軍規律，終身奉行下列三事：<br>第一：敬天樂群，做一個堂堂正正的好國民。.................（Duty to God.）<br>第二：隨時隨地扶助他人，服務社會。............................（Duty to others.）<br>第三：力求自己智識、品德、體格之健全。.....................（Duty to self.）</pre>
+                <div class="blur full_size scout flex_center_center popbox_main_content">
+                    <div data-popbox-id="scoutPromise-popbox" class="popbox ">
+                        <div class="popbox_container">
+                            <h4>中華民國童軍諾言：</h4>
+                            <pre>憑我的榮譽，我願盡力遵守童軍規律，終身奉行下列三事：<br>第一：敬天樂群，做一個堂堂正正的好國民。......（Duty to God.）<br>第二：隨時隨地扶助他人，服務社會。...........（Duty to others.）<br>第三：力求自己智識、品德、體格之健全。........（Duty to self.）</pre>
 
-                                <button data-popbox-close="scoutPromise-popbox">Close</button>
-                            </div>
+                            <button data-popbox-close="scoutPromise-popbox">Close</button>
                         </div>
-    
-                        <div id="scoutpic02" class="scoutpic inbox_size flex_center_center" data-popbox-target="scoutPromise-popbox">
-    
-                            <H1>中華民國童軍諾言</H1>
-                        </div>
-    
                     </div>
+
+                    <div id="scoutpic02" class="scoutpic inbox_size flex_center_center" data-popbox-target="scoutPromise-popbox">
+
+                        <H1>中華民國童軍諾言</H1>
+                    </div>
+
                 </div>
-            
-            
+            </div>
+
+
             <!-- 規律 -->
             <div class="scout_background full_size">
                 <div class="blur full_size scout flex_center_center popbox_main_content">
@@ -193,301 +198,292 @@
                         以及服務高中生的「單國璽基金會生命探索營」，<br>
                         詳細介紹如下：</p>
                 </div>
-                <section class="js-cd-timeline">
-                    <div class="cd-timeline__container">
-
-                        <!-- 冒險王 -->
-                        <div class="cd-timeline__block js-cd-block">
-                            <div class="cd-timeline__img cd-timeline__img--picture js-cd-img">
-                            </div> <!-- cd-timeline__img -->
-                            <div class="cd-timeline__content js-cd-content">
-                                <h4>我是冒險王環境生態探索體驗營</h4>
-                                <p>服務：服務員、羅浮、行義、童軍</p>
-                                <p>對象：全國國小學生透過線上報名參加</p>
-                                <p>簡介：2013年我們童軍團協助了雲林縣野鳥學會舉辦「諸羅樹蛙小小解說員初階研習營」，發覺我們有豐沛的服務能量，因此，2014年前開始舉辦「我是冒險王環境生態探索體驗營」，開始時只有暑假，後來迴響很大，就連寒假也舉辦。我們透過童軍的許多戶外活動，帶領孩子做各方面的探索體驗，舉凡攀樹、行舟、垂降、野炊......。帶領孩子認真體驗生活，因此，獲得家長及參加的孩子熱烈肯定，線上報名往往迅速額滿。</p>
-                                <div class="swiper-container">
+                <section id="cd-timeline" class="cd-container">
+                        <div class="cd-timeline-block">
+                            <div class="cd-timeline-img cd-picture"></div> <!-- cd-timeline-img -->
+                
+                            <div class="cd-timeline-content">
+                                    <h4>我是冒險王環境生態探索體驗營</h4>
+                                    <p>服務：服務員、羅浮、行義、童軍</p>
+                                    <p>對象：全國國小學生透過線上報名參加</p>
+                                    <p>簡介：2013年我們童軍團協助了雲林縣野鳥學會舉辦「諸羅樹蛙小小解說員初階研習營」，發覺我們有豐沛的服務能量，因此，2014年前開始舉辦「我是冒險王環境生態探索體驗營」，開始時只有暑假，後來迴響很大，就連寒假也舉辦。我們透過童軍的許多戶外活動，帶領孩子做各方面的探索體驗，舉凡攀樹、行舟、垂降、野炊......。帶領孩子認真體驗生活，因此，獲得家長及參加的孩子熱烈肯定，線上報名往往迅速額滿。</p>
+                                    <div class="swiper-container">
                                     <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <a class="example-image-link" href="img/AdventureKing01.jpg" data-lightbox="AdventureKing_lightbox"
-                                                data-title="小冒險王報到時與小隊輔合影">
-                                                <img class="example-image" src="img/AdventureKing01.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a class="example-image-link" href="img/AdventureKing02.jpg" data-lightbox="AdventureKing_lightbox"
-                                                data-title="小冒險王搭帳篷">
-                                                <img class="example-image" src="img/AdventureKing02.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a class="example-image-link" href="img/AdventureKing03.jpg" data-lightbox="AdventureKing_lightbox"
-                                                data-title="小冒險王搭帳篷">
-                                                <img class="example-image" src="img/AdventureKing03.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a class="example-image-link" href="img/AdventureKing04.jpg" data-lightbox="AdventureKing_lightbox"
-                                                data-title="小冒險王的闖關">
-                                                <img class="example-image" src="img/AdventureKing04.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a class="example-image-link" href="img/AdventureKing05.jpg" data-lightbox="AdventureKing_lightbox"
-                                                data-title="小冒險王走出營地到卡羅爾管樂觀光工廠參觀">
-                                                <img class="example-image" src="img/AdventureKing05.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a class="example-image-link" href="img/AdventureKing06.jpg" data-lightbox="AdventureKing_lightbox"
-                                                data-title="營火時的旗舞">
-                                                <img class="example-image" src="img/AdventureKing06.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a class="example-image-link" href="img/AdventureKing07.jpg" data-lightbox="AdventureKing_lightbox"
-                                                data-title="屬於冒險王營火的空拍照">
-                                                <img class="example-image" src="img/AdventureKing07.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a class="example-image-link" href="img/AdventureKing08.jpg" data-lightbox="AdventureKing_lightbox"
-                                                data-title="結訓時小冒險王的表演">
-                                                <img class="example-image" src="img/AdventureKing08.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a class="example-image-link" href="img/AdventureKing09.jpg" data-lightbox="AdventureKing_lightbox"
-                                                data-title="小冒險王的大樂器">
-                                                <img class="example-image" src="img/AdventureKing09.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a class="example-image-link" href="img/AdventureKing10.jpg" data-lightbox="AdventureKing_lightbox"
-                                                data-title="認真記錄小冒險王的爸爸媽媽們">
-                                                <img class="example-image" src="img/AdventureKing10.jpg" alt="" />
-                                            </a>
-                                        </div>
-
+                                    <div class="swiper-slide">
+                                    <a class="example-image-link" href="img/AdventureKing01.jpg" data-lightbox="AdventureKing_lightbox"
+                                    data-title="小冒險王報到時與小隊輔合影">
+                                    <img class="example-image" src="img/AdventureKing01.jpg" alt="" />
+                                    </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                    <a class="example-image-link" href="img/AdventureKing02.jpg" data-lightbox="AdventureKing_lightbox"
+                                    data-title="小冒險王搭帳篷">
+                                    <img class="example-image" src="img/AdventureKing02.jpg" alt="" />
+                                    </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                    <a class="example-image-link" href="img/AdventureKing03.jpg" data-lightbox="AdventureKing_lightbox"
+                                    data-title="小冒險王搭帳篷">
+                                    <img class="example-image" src="img/AdventureKing03.jpg" alt="" />
+                                    </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                    <a class="example-image-link" href="img/AdventureKing04.jpg" data-lightbox="AdventureKing_lightbox"
+                                    data-title="小冒險王的闖關">
+                                    <img class="example-image" src="img/AdventureKing04.jpg" alt="" />
+                                    </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                    <a class="example-image-link" href="img/AdventureKing05.jpg" data-lightbox="AdventureKing_lightbox"
+                                    data-title="小冒險王走出營地到卡羅爾管樂觀光工廠參觀">
+                                    <img class="example-image" src="img/AdventureKing05.jpg" alt="" />
+                                    </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                    <a class="example-image-link" href="img/AdventureKing06.jpg" data-lightbox="AdventureKing_lightbox"
+                                    data-title="營火時的旗舞">
+                                    <img class="example-image" src="img/AdventureKing06.jpg" alt="" />
+                                    </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                    <a class="example-image-link" href="img/AdventureKing07.jpg" data-lightbox="AdventureKing_lightbox"
+                                    data-title="屬於冒險王營火的空拍照">
+                                    <img class="example-image" src="img/AdventureKing07.jpg" alt="" />
+                                    </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                    <a class="example-image-link" href="img/AdventureKing08.jpg" data-lightbox="AdventureKing_lightbox"
+                                    data-title="結訓時小冒險王的表演">
+                                    <img class="example-image" src="img/AdventureKing08.jpg" alt="" />
+                                    </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                    <a class="example-image-link" href="img/AdventureKing09.jpg" data-lightbox="AdventureKing_lightbox"
+                                    data-title="小冒險王的大樂器">
+                                    <img class="example-image" src="img/AdventureKing09.jpg" alt="" />
+                                    </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                    <a class="example-image-link" href="img/AdventureKing10.jpg" data-lightbox="AdventureKing_lightbox"
+                                    data-title="認真記錄小冒險王的爸爸媽媽們">
+                                    <img class="example-image" src="img/AdventureKing10.jpg" alt="" />
+                                    </a>
+                                    </div>
+                                    
                                     </div>
                                     <!-- Add Pagination -->
                                     <div class="swiper-pagination"></div>
                                     <!-- Add Arrows -->
                                     <div class="swiper-button-next"></div>
                                     <div class="swiper-button-prev"></div>
-                                </div>
-                                <span class="cd-timeline__date">國小</span>
-                            </div> <!-- cd-timeline__content -->
-                        </div> <!-- cd-timeline__block -->
-
-                        <!-- 寒訓 -->
-                        <div class="cd-timeline__block js-cd-block">
-                            <div class="cd-timeline__img cd-timeline__img--picture js-cd-img">
-                            </div> <!-- cd-timeline__img -->
-                            <div class="cd-timeline__content js-cd-content">
-                                <h4>童軍教育寒訓內甕露營</h4>
-                                <p>服務：服務員、羅浮、行義，以及全校老師</p>
-                                <p>對象：同濟中學國二學生、受邀童軍團童軍、弱勢團體</p>
-                                <p>簡介：同濟中學落實童軍教育，國中部紮實的童軍課程，必須有個總驗收活動，這就是寒訓露營。透過這個活動，驗收童軍教育的學習，因為童軍課的內容成了實際「用」的能力，所以，在學習上就特別投入。而負責籌劃這個活動的就是童軍團（其他學校通常委外由育樂公司辦理），2006年起開始實施至今未間斷，視為我們童軍團年度最盛大的固定服務。2010年起，這個露營開始固定在嘉義仁義潭旁的內甕國小實施，並開始開放給與我們友好的社區、學校童軍團組隊參加，最遠有來自台北市的第69團童軍團，以及新竹尖石國中的童軍團。今年，還將特別開放給台中后里的耕水團體青少年參加。</p>
-                                <div class="swiper-container">
+                                    </div>
+                                    <span class="cd-date">國小</span>
+                            </div> <!-- cd-timeline-content -->
+                        </div> <!-- cd-timeline-block -->
+                
+                        <div class="cd-timeline-block">
+                            <div class="cd-timeline-img cd-picture"></div> <!-- cd-timeline-img -->
+                
+                            <div class="cd-timeline-content">
+                                    <h4>童軍教育寒訓內甕露營</h4>
+                                    <p>服務：服務員、羅浮、行義，以及全校老師</p>
+                                    <p>對象：同濟中學國二學生、受邀童軍團童軍、弱勢團體</p>
+                                    <p>簡介：同濟中學落實童軍教育，國中部紮實的童軍課程，必須有個總驗收活動，這就是寒訓露營。透過這個活動，驗收童軍教育的學習，因為童軍課的內容成了實際「用」的能力，所以，在學習上就特別投入。而負責籌劃這個活動的就是童軍團（其他學校通常委外由育樂公司辦理），2006年起開始實施至今未間斷，視為我們童軍團年度最盛大的固定服務。2010年起，這個露營開始固定在嘉義仁義潭旁的內甕國小實施，並開始開放給與我們友好的社區、學校童軍團組隊參加，最遠有來自台北市的第69團童軍團，以及新竹尖石國中的童軍團。今年，還將特別開放給台中后里的耕水團體青少年參加。</p>
+                                    <div class="swiper-container">
                                     <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <a class="example-image-link" href="img/winterProgram01.jpg" data-lightbox="WinterProgram_lightbox"
-                                                data-title="全景圖">
-                                                <img class="example-image" src="img/winterProgram01.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a class="example-image-link" href="img/winterProgram02.jpg" data-lightbox="WinterProgram_lightbox"
-                                                data-title="空拍全景圖">
-                                                <img class="example-image" src="img/winterProgram02.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a class="example-image-link" href="img/winterProgram03.jpg" data-lightbox="WinterProgram_lightbox"
-                                                data-title="搭設小隊帳">
-                                                <img class="example-image" src="img/winterProgram03.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a class="example-image-link" href="img/winterProgram04.jpg" data-lightbox="WinterProgram_lightbox"
-                                                data-title="搭設小隊帳">
-                                                <img class="example-image" src="img/winterProgram04.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a class="example-image-link" href="img/winterProgram05.jpg" data-lightbox="WinterProgram_lightbox"
-                                                data-title="搭建餐桌、高架灶">
-                                                <img class="example-image" src="img/winterProgram05.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a class="example-image-link" href="img/winterProgram06.jpg" data-lightbox="WinterProgram_lightbox"
-                                                data-title="搭建餐桌、高架灶">
-                                                <img class="example-image" src="img/winterProgram06.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a class="example-image-link" href="img/winterProgram07.jpg" data-lightbox="WinterProgram_lightbox"
-                                                data-title="升火煮飯">
-                                                <img class="example-image" src="img/winterProgram07.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a class="example-image-link" href="img/winterProgram08.jpg" data-lightbox="WinterProgram_lightbox"
-                                                data-title="頒發榮譽旗">
-                                                <img class="example-image" src="img/winterProgram08.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a class="example-image-link" href="img/winterProgram09.jpg" data-lightbox="WinterProgram_lightbox"
-                                                data-title="營火">
-                                                <img class="example-image" src="img/winterProgram09.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a class="example-image-link" href="img/winterProgram10.jpg" data-lightbox="WinterProgram_lightbox"
-                                                data-title="爐邊談話">
-                                                <img class="example-image" src="img/winterProgram10.jpg" alt="" />
-                                            </a>
-                                        </div>
+                                    <div class="swiper-slide">
+                                    <a class="example-image-link" href="img/winterProgram01.jpg" data-lightbox="WinterProgram_lightbox"
+                                    data-title="全景圖">
+                                    <img class="example-image" src="img/winterProgram01.jpg" alt="" />
+                                    </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                    <a class="example-image-link" href="img/winterProgram02.jpg" data-lightbox="WinterProgram_lightbox"
+                                    data-title="空拍全景圖">
+                                    <img class="example-image" src="img/winterProgram02.jpg" alt="" />
+                                    </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                    <a class="example-image-link" href="img/winterProgram03.jpg" data-lightbox="WinterProgram_lightbox"
+                                    data-title="搭設小隊帳">
+                                    <img class="example-image" src="img/winterProgram03.jpg" alt="" />
+                                    </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                    <a class="example-image-link" href="img/winterProgram04.jpg" data-lightbox="WinterProgram_lightbox"
+                                    data-title="搭設小隊帳">
+                                    <img class="example-image" src="img/winterProgram04.jpg" alt="" />
+                                    </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                    <a class="example-image-link" href="img/winterProgram05.jpg" data-lightbox="WinterProgram_lightbox"
+                                    data-title="搭建餐桌、高架灶">
+                                    <img class="example-image" src="img/winterProgram05.jpg" alt="" />
+                                    </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                    <a class="example-image-link" href="img/winterProgram06.jpg" data-lightbox="WinterProgram_lightbox"
+                                    data-title="搭建餐桌、高架灶">
+                                    <img class="example-image" src="img/winterProgram06.jpg" alt="" />
+                                    </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                    <a class="example-image-link" href="img/winterProgram07.jpg" data-lightbox="WinterProgram_lightbox"
+                                    data-title="升火煮飯">
+                                    <img class="example-image" src="img/winterProgram07.jpg" alt="" />
+                                    </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                    <a class="example-image-link" href="img/winterProgram08.jpg" data-lightbox="WinterProgram_lightbox"
+                                    data-title="頒發榮譽旗">
+                                    <img class="example-image" src="img/winterProgram08.jpg" alt="" />
+                                    </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                    <a class="example-image-link" href="img/winterProgram09.jpg" data-lightbox="WinterProgram_lightbox"
+                                    data-title="營火">
+                                    <img class="example-image" src="img/winterProgram09.jpg" alt="" />
+                                    </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                    <a class="example-image-link" href="img/winterProgram10.jpg" data-lightbox="WinterProgram_lightbox"
+                                    data-title="爐邊談話">
+                                    <img class="example-image" src="img/winterProgram10.jpg" alt="" />
+                                    </a>
+                                    </div>
                                     </div>
                                     <!-- Add Pagination -->
                                     <div class="swiper-pagination"></div>
                                     <!-- Add Arrows -->
                                     <div class="swiper-button-next"></div>
                                     <div class="swiper-button-prev"></div>
-                                </div>
-
-                                <span class="cd-timeline__date">國中</span>
-                            </div> <!-- cd-timeline__content -->
-                        </div> <!-- cd-timeline__block -->
-
-
-                        <!-- 生命探索營 -->
-                        <div class="cd-timeline__block js-cd-block">
-                            <div class="cd-timeline__img cd-timeline__img--picture js-cd-img">
-                            </div> <!-- cd-timeline__img -->
-                            <div class="cd-timeline__content js-cd-content">
-                                <h4>單國璽基金會生命探索營</h4>
-                                <p>服務：服務員、羅浮</p>
-                                <p>對象：全省天主教中學高中學生</p>
-                                <p>簡介：2012年，我們學校童軍團的伙伴受邀參加此營隊，得到豐富的學習資源。但隔年這個營隊就因服務人力不足無法續辦。主辦者輾轉與我們童軍團聯繫上，由我們的羅浮群來承辦此活動，並協助培養營隊自己的服務員。由2014年起至今，亦透過網路線上報名，反應熱烈。這個營隊凝聚的正向力量，獲得了天主教會的信友團體「基督服務團」看重，全力支持陪伴這個營隊，其中名人為前高鐵董事長歐晉德先生，至今每次活動親自出席，與青年們分享「服務領導」的重要觀念。</p>
-                                <div class="swiper-container">
+                                    </div>
+                                    
+                                    <span class="cd-date">國中</span>
+                            </div> <!-- cd-timeline-content -->
+                        </div> <!-- cd-timeline-block -->
+                
+                        <div class="cd-timeline-block">
+                            <div class="cd-timeline-img cd-picture"></div> <!-- cd-timeline-img -->
+                
+                            <div class="cd-timeline-content">
+                                    <h4>單國璽基金會生命探索營</h4>
+                                    <p>服務：服務員、羅浮</p>
+                                    <p>對象：全省天主教中學高中學生</p>
+                                    <p>簡介：2012年，我們學校童軍團的伙伴受邀參加此營隊，得到豐富的學習資源。但隔年這個營隊就因服務人力不足無法續辦。主辦者輾轉與我們童軍團聯繫上，由我們的羅浮群來承辦此活動，並協助培養營隊自己的服務員。由2014年起至今，亦透過網路線上報名，反應熱烈。這個營隊凝聚的正向力量，獲得了天主教會的信友團體「基督服務團」看重，全力支持陪伴這個營隊，其中名人為前高鐵董事長歐晉德先生，至今每次活動親自出席，與青年們分享「服務領導」的重要觀念。</p>
+                                    <div class="swiper-container">
                                     <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <a class="example-image-link" href="img/LifeExplorationCamp01.jpg"
-                                                data-lightbox="LifeExplorationCamp_lightbox" data-title="小隊相見歡">
-                                                <img class="example-image" src="img/LifeExplorationCamp01.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a class="example-image-link" href="img/LifeExplorationCamp02.jpg"
-                                                data-lightbox="LifeExplorationCamp_lightbox" data-title="製作小隊留言海報">
-                                                <img class="example-image" src="img/LifeExplorationCamp02.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a class="example-image-link" href="img/LifeExplorationCamp03.jpg"
-                                                data-lightbox="LifeExplorationCamp_lightbox" data-title="開幕演講 - 領袖高峰座談">
-                                                <img class="example-image" src="img/LifeExplorationCamp03.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a class="example-image-link" href="img/LifeExplorationCamp04.jpg"
-                                                data-lightbox="LifeExplorationCamp_lightbox" data-title="探索體驗 - 腦力激盪">
-                                                <img class="example-image" src="img/LifeExplorationCamp04.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a class="example-image-link" href="img/LifeExplorationCamp05.jpg"
-                                                data-lightbox="LifeExplorationCamp_lightbox" data-title="探索體驗 - 紅外線不可能任務">
-                                                <img class="example-image" src="img/LifeExplorationCamp05.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a class="example-image-link" href="img/LifeExplorationCamp06.jpg"
-                                                data-lightbox="LifeExplorationCamp_lightbox" data-title="探索體驗 - 智慧挖寶">
-                                                <img class="example-image" src="img/LifeExplorationCamp06.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a class="example-image-link" href="img/LifeExplorationCamp07.jpg"
-                                                data-lightbox="LifeExplorationCamp_lightbox" data-title="天堂饗宴">
-                                                <img class="example-image" src="img/LifeExplorationCamp07.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a class="example-image-link" href="img/LifeExplorationCamp08.jpg"
-                                                data-lightbox="LifeExplorationCamp_lightbox" data-title="台上一分鐘">
-                                                <img class="example-image" src="img/LifeExplorationCamp08.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a class="example-image-link" href="img/LifeExplorationCamp09.jpg"
-                                                data-lightbox="LifeExplorationCamp_lightbox" data-title="早禱">
-                                                <img class="example-image" src="img/LifeExplorationCamp09.jpg" alt="" />
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a class="example-image-link" href="img/LifeExplorationCamp10.jpg"
-                                                data-lightbox="LifeExplorationCamp_lightbox" data-title="祝福派遣">
-                                                <img class="example-image" src="img/LifeExplorationCamp10.jpg" alt="" />
-                                            </a>
-                                        </div>
+                                    <div class="swiper-slide">
+                                    <a class="example-image-link" href="img/LifeExplorationCamp01.jpg"
+                                    data-lightbox="LifeExplorationCamp_lightbox" data-title="小隊相見歡">
+                                    <img class="example-image" src="img/LifeExplorationCamp01.jpg" alt="" />
+                                    </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                    <a class="example-image-link" href="img/LifeExplorationCamp02.jpg"
+                                    data-lightbox="LifeExplorationCamp_lightbox" data-title="製作小隊留言海報">
+                                    <img class="example-image" src="img/LifeExplorationCamp02.jpg" alt="" />
+                                    </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                    <a class="example-image-link" href="img/LifeExplorationCamp03.jpg"
+                                    data-lightbox="LifeExplorationCamp_lightbox" data-title="開幕演講 - 領袖高峰座談">
+                                    <img class="example-image" src="img/LifeExplorationCamp03.jpg" alt="" />
+                                    </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                    <a class="example-image-link" href="img/LifeExplorationCamp04.jpg"
+                                    data-lightbox="LifeExplorationCamp_lightbox" data-title="探索體驗 - 腦力激盪">
+                                    <img class="example-image" src="img/LifeExplorationCamp04.jpg" alt="" />
+                                    </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                    <a class="example-image-link" href="img/LifeExplorationCamp05.jpg"
+                                    data-lightbox="LifeExplorationCamp_lightbox" data-title="探索體驗 - 紅外線不可能任務">
+                                    <img class="example-image" src="img/LifeExplorationCamp05.jpg" alt="" />
+                                    </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                    <a class="example-image-link" href="img/LifeExplorationCamp06.jpg"
+                                    data-lightbox="LifeExplorationCamp_lightbox" data-title="探索體驗 - 智慧挖寶">
+                                    <img class="example-image" src="img/LifeExplorationCamp06.jpg" alt="" />
+                                    </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                    <a class="example-image-link" href="img/LifeExplorationCamp07.jpg"
+                                    data-lightbox="LifeExplorationCamp_lightbox" data-title="天堂饗宴">
+                                    <img class="example-image" src="img/LifeExplorationCamp07.jpg" alt="" />
+                                    </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                    <a class="example-image-link" href="img/LifeExplorationCamp08.jpg"
+                                    data-lightbox="LifeExplorationCamp_lightbox" data-title="台上一分鐘">
+                                    <img class="example-image" src="img/LifeExplorationCamp08.jpg" alt="" />
+                                    </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                    <a class="example-image-link" href="img/LifeExplorationCamp09.jpg"
+                                    data-lightbox="LifeExplorationCamp_lightbox" data-title="早禱">
+                                    <img class="example-image" src="img/LifeExplorationCamp09.jpg" alt="" />
+                                    </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                    <a class="example-image-link" href="img/LifeExplorationCamp10.jpg"
+                                    data-lightbox="LifeExplorationCamp_lightbox" data-title="祝福派遣">
+                                    <img class="example-image" src="img/LifeExplorationCamp10.jpg" alt="" />
+                                    </a>
+                                    </div>
                                     </div>
                                     <!-- Add Pagination -->
                                     <div class="swiper-pagination"></div>
                                     <!-- Add Arrows -->
                                     <div class="swiper-button-next"></div>
                                     <div class="swiper-button-prev"></div>
-                                </div>
-
-                                <span class="cd-timeline__date">高中</span>
-                            </div> <!-- cd-timeline__content -->
-                        </div> <!-- cd-timeline__block -->
-
-                        <!-- ... -->
-                    </div>
-                </section> <!-- cd-timeline -->
+                                    </div>
+                                    
+                                    <span class="cd-date">高中</span>
+                            </div> <!-- cd-timeline-content -->
+                        </div> <!-- cd-timeline-block -->
+                
+                       
+                    </section> <!-- cd-timeline -->
                 <div id="campService_footer" class="campService_footer_size"></div>
 
             </div>
 
         </div>
         <!-- 特別活動 -->
-        <div id="specialEvent" class="specialEvent_background full_size ">
-            <div id="specialEvent" class="blur full_size flex_center_center flex-direction_column">
+        <div id="specialEvent" class="specialEvent_background ">
+            <div id="specialEvent" class="blur flex_center_center flex-direction_column">
                 <div class="specialEvent_header specialEvent_header_size">
                     <H1>特別活動</H1>
                 </div>
-                <div class="specialEvent_inbox inbox_size">
+                <div class="specialEvent_inbox">
                     <div id="UK" class="HKUK container-a4">
                         <ul class="caption-style-4 ">
-                            <li id="HKtext" class="HKUK-L">
-                                <p class="text-wrapper">
-                                    <span>童軍團藉由服務員的人脈有許多的機會與各地的青年交流，</span>
-                                    <span>與香港青年交流乃因與香港天主教會的牽線，</span>
-                                    <span>我們團曾五次陪伴香港青年到台灣來做人文環境探索之旅，</span>
-                                    <span>陪伴人次達百人以上。</span>
-                                    <span>最近一次的交流，</span>
-                                    <span>乃於2018年暑假，</span>
-                                    <span>我們陪伴香港青年探訪了台灣後山台東的人文風情，</span>
-                                    <span>也到了墾丁名勝，</span>
-                                    <span>以及我們家鄉嘉義的風土民情。</span>
-                                    <span>這樣的交流讓我們的伙伴學習當主人，</span>
-                                    <span>接待客人，</span>
-                                    <span>促進人與人之間的互動、文化刺激、情感交流，</span>
-                                    <span>因此，</span>
-                                    <span>讓我們的伙伴具有更寬廣的視野。</span>
+                            <li id="HKtext" class="HKUK-L" >
+                                <p>
+                                    &ensp;&ensp;童軍團因服務員的人脈<br>
+                                    &ensp;&ensp;有許多機會與各地青年交流，<br>
+                                    &ensp;&ensp;與香港青年交流乃因與香港天主教會的牽線，<br>
+                                    &ensp;&ensp;我們團曾五次陪伴香港青年<br>
+                                    &ensp;&ensp;到台灣做人文環境探索之旅，<br>
+                                    &ensp;&ensp;陪伴人次達百人以上。<br>
+                                    &ensp;&ensp;最近一次的交流，乃於2018年暑假，<br>
+                                    &ensp;&ensp;我們陪伴香港青年探訪了後山台東的人文風情，<br>
+                                    &ensp;&ensp;也到墾丁名勝，以及家鄉嘉義的風土民情。<br>
+                                    &ensp;&ensp;這樣的交流讓我們的伙伴學習當主人接待客人，<br>
+                                    &ensp;&ensp;促進人與人之間的互動、文化刺激、情感交流，<br>
+                                    &ensp;&ensp;因此，讓我們的伙伴具有更寬廣的視野。<br>
                                 </p>
                             </li>
                             <li id="HKpicS01" class="HKUK-S">
-                                <a class="example-image-link" href="img/UKL1.jpg" data-lightbox="HK_lightbox"
-                                    data-title="早禱">
-                                    <img src="img/UKL1.jpg" alt="">
+                                <a class="example-image-link" href="img/HKS01.jpg" data-lightbox="HK_lightbox"
+                                    data-title="與香港青年到921地震教育園區參訪">
+                                    <img src="img/HKS01.jpg" alt="">
                                     <div class="caption">
-                                        <div class="blur HKUK-S"></div>
-                                        <div class="caption-text HKUK-S">
+                                        <div id="HKpicS01" class="blur HKUK-S"></div>
+                                        <div id="HKpicS01" class="caption-text HKUK-S">
                                             <h1>港台文化交流</h1>
                                         </div>
                                     </div>
@@ -496,12 +492,12 @@
 
                             </li>
                             <li id="HKpicS02" class="HKUK-S">
-                                <a class="example-image-link" href="img/UKL1.jpg" data-lightbox="HK_lightbox"
-                                    data-title="祝福派遣">
-                                    <img src="img/UKL1.jpg" alt="">
+                                <a class="example-image-link" href="img/HKS02.jpg" data-lightbox="HK_lightbox"
+                                    data-title="自己的麵包自己做 - 與香港青年">
+                                    <img src="img/HKS02.jpg" alt="">
                                     <div class="caption">
-                                        <div class="blur HKUK-S"></div>
-                                        <div class="caption-text HKUK-S">
+                                        <div id="HKpicS02" class="blur HKUK-S"></div>
+                                        <div id="HKpicS02" class="caption-text HKUK-S">
                                             <h1>港台文化交流</h1>
                                         </div>
                                     </div>
@@ -509,12 +505,12 @@
 
                             </li>
                             <li id="HKpicS03" class="HKUK-S">
-                                <a class="example-image-link" href="img/UKL1.jpg" data-lightbox="HK_lightbox"
-                                    data-title="祝福派遣">
-                                    <img src="img/UKL1.jpg" alt="">
+                                <a class="example-image-link" href="img/HKS03.jpg" data-lightbox="HK_lightbox"
+                                    data-title="帶來自香港的青年體驗吃碗粿">
+                                    <img src="img/HKS03.jpg" alt="">
                                     <div class="caption">
-                                        <div class="blur HKUK-S"></div>
-                                        <div class="caption-text HKUK-S">
+                                        <div id="HKpicS03" class="blur HKUK-S"></div>
+                                        <div id="HKpicS03" class="caption-text HKUK-S">
                                             <h1>港台文化交流</h1>
                                         </div>
                                     </div>
@@ -522,12 +518,11 @@
 
                             </li>
                             <li id="HKpicL" class="HKUK-L">
-                                <a class="example-image-link" href="img/UKL1.jpg" data-lightbox="HK_lightbox"
-                                    data-title="祝福派遣">
-                                    <img src="img/UKL1.jpg" alt="">
+                                <a class="example-image-link" href="img/HKL.jpg" data-lightbox="HK_lightbox" data-title="參訪台東聖母健康農莊 - 在教堂大合照">
+                                    <img src="img/HKL.jpg" alt="">
                                     <div class="caption">
-                                        <div class="blur HKUK-L"></div>
-                                        <div class="caption-text HKUK-L">
+                                        <div id="HKpicL" class="blur HKUK-L"></div>
+                                        <div id="HKpicL" class="caption-text HKUK-L">
                                             <h1>港台文化交流</h1>
                                         </div>
                                     </div>
@@ -535,12 +530,12 @@
 
                             </li>
                             <li id="HKpicS04" class="HKUK-S">
-                                <a class="example-image-link" href="img/UKL1.jpg" data-lightbox="HK_lightbox"
-                                    data-title="祝福派遣">
-                                    <img src="img/UKL1.jpg" alt="">
+                                <a class="example-image-link" href="img/HKS04.jpg" data-lightbox="HK_lightbox"
+                                    data-title="參訪聖奧德教堂">
+                                    <img src="img/HKS04.jpg" alt="">
                                     <div class="caption">
-                                        <div class="blur HKUK-S"></div>
-                                        <div class="caption-text HKUK-S">
+                                        <div id="HKpicS04" class="blur HKUK-S"></div>
+                                        <div id="HKpicS04" class="caption-text HKUK-S">
                                             <h1>港台文化交流</h1>
                                         </div>
                                     </div>
@@ -558,24 +553,36 @@
                                     data-title="撿拾稻草搭設涼亭屋頂">
                                     <img src="img/UKS01.jpg" alt="">
                                     <div class="caption">
-                                        <div class="blur HKUK-S"></div>
-                                        <div class="caption-text HKUK-S">
+                                        <div id="UKpicS01" class="blur HKUK-S"></div>
+                                        <div id="UKpicS01" class="caption-text HKUK-S">
                                             <h1>台英童軍交流</h1>
                                         </div>
                                     </div>
                                 </a>
 
                             </li>
-                            <li id="UKtext" class="HKUK-L">
+                            <li id="UKtext" class="HKUK-L" >
 
+                                <p>&ensp;&ensp;2018年暑假英國女童軍總會<br>
+                                    &ensp;&ensp;透過臺灣願景青年行動網協會<br>
+                                    &ensp;&ensp;來到臺中后里的”耕水小子”，<br>
+                                    &ensp;&ensp;進行為期兩周的陪伴活動，<br>
+                                    &ensp;&ensp;而我們也抓緊這個機會<br>
+                                    &ensp;&ensp;到臺中與女童軍們<br>
+                                    &ensp;&ensp;進行兩天一夜的交流活動。<br>
+                                    &ensp;&ensp;活動過程中，<br>
+                                    &ensp;&ensp;我們與英國女童軍伙伴展開對話<br>
+                                    &ensp;&ensp;（聊文化、聊生活....），<br>
+                                    &ensp;&ensp;也一起動手完成一座涼亭建築，<br>
+                                    &ensp;&ensp;時間雖然短暫，卻是收穫滿滿。 </p>
                             </li>
                             <li id="UKpicS02" class="HKUK-S">
                                 <a class="example-image-link" href="img/UKS02.jpg" data-lightbox="UK_lightbox"
                                     data-title="涼亭建材整">
                                     <img src="img/UKS02.jpg" alt="">
                                     <div class="caption">
-                                        <div class="blur HKUK-S"></div>
-                                        <div class="caption-text HKUK-S">
+                                        <div id="UKpicS02" class="blur HKUK-S"></div>
+                                        <div id="UKpicS02" class="caption-text HKUK-S">
                                             <h1>台英童軍交流</h1>
                                         </div>
                                     </div>
@@ -586,8 +593,8 @@
                                 <a class="example-image-link" href="img/UKL.jpg" data-lightbox="UK_lightbox" data-title="與英國女童軍及耕水小子合影">
                                     <img src="img/UKL.jpg" alt="">
                                     <div class="caption">
-                                        <div class="blur HKUK-L"></div>
-                                        <div class="caption-text HKUK-L">
+                                        <div id="UKpicL" class="blur HKUK-L"></div>
+                                        <div id="UKpicL" class="caption-text HKUK-L">
                                             <h1>台英童軍交流</h1>
                                         </div>
                                     </div>
@@ -599,8 +606,8 @@
                                     data-title="與英國女童軍一起組裝涼亭">
                                     <img src="img/UKS03.jpg" alt="">
                                     <div class="caption">
-                                        <div class="blur HKUK-S"></div>
-                                        <div class="caption-text HKUK-S">
+                                        <div id="UKpicS03" class="blur HKUK-S"></div>
+                                        <div id="UKpicS03" class="caption-text HKUK-S">
                                             <h1>台英童軍交流</h1>
                                         </div>
                                     </div>
@@ -612,8 +619,8 @@
                                     data-title="童軍之夜-農地營火(2018.08.11)">
                                     <img src="img/UKS04.jpg" alt="">
                                     <div class="caption">
-                                        <div class="blur HKUK-S"></div>
-                                        <div class="caption-text HKUK-S">
+                                        <div id="UKpicS04" class="blur HKUK-S"></div>
+                                        <div id="UKpicS04" class="caption-text HKUK-S">
                                             <h1>台英童軍交流</h1>
                                         </div>
                                     </div>
@@ -628,164 +635,498 @@
 
         </div>
         <!-- 樹屋 -->
-        <div id="treeHouse" class="treeHouse_background">
-                <div id="treeHouse" class="blur full_size">
-                    
-                </div>
+        <div class="treeHouse_timeline treeHouse_background ">
+            <div id="treeHouse" class="blur full_size flex-direction_column">
 
+                    <div class="specialEvent_header specialEvent_header_size">
+                            <H1>樹屋</H1>
+                        </div>
+                <section class="timeline-carousel inbox_size">
+                    <div class="timeline-carousel__item-wrapper" data-js="timeline-carousel">
+                        <!--Timeline item 1-->
+                        <div class="timeline-carousel__item">
+                                <div class="timeline-carousel__image">
+                                        <div class="swiper-container">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="swiper-zoom-container">
+                                                        <a class="example-image-link" href="img/treeHouse01-01.jpg"
+                                                            data-lightbox="treeHouse01_lightbox">
+                                                            <img class="example-image" src="img/treeHouse01-01.jpg" alt="" />
+                                                        </a>
+        
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="swiper-zoom-container">
+                                                        <a class="example-image-link" href="img/treeHouse01-02.jpg"
+                                                            data-lightbox="treeHouse01_lightbox">
+                                                            <img class="example-image" src="img/treeHouse01-02.jpg" alt="" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="swiper-zoom-container">
+                                                        <a class="example-image-link" href="img/treeHouse01-03.jpg"
+                                                            data-lightbox="treeHouse01_lightbox">
+                                                            <img class="example-image" src="img/treeHouse01-03.jpg" alt="" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="swiper-zoom-container">
+                                                        <a class="example-image-link" href="img/treeHouse01-04.jpg"
+                                                            data-lightbox="treeHouse01_lightbox">
+                                                            <img class="example-image" src="img/treeHouse01-04.jpg" alt="" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="swiper-zoom-container">
+                                                        <a class="example-image-link" href="img/treeHouse01-05.jpg"
+                                                            data-lightbox="treeHouse01_lightbox">
+                                                            <img class="example-image" src="img/treeHouse01-05.jpg" alt="" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="swiper-zoom-container">
+                                                        <a class="example-image-link" href="img/treeHouse01-06.jpg"
+                                                            data-lightbox="treeHouse01_lightbox">
+                                                            <img class="example-image" src="img/treeHouse01-06.jpg" alt="" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="swiper-zoom-container">
+                                                        <a class="example-image-link" href="img/treeHouse01-07.jpg"
+                                                            data-lightbox="treeHouse01_lightbox">
+                                                            <img class="example-image" src="img/treeHouse01-07.jpg" alt="" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Add Pagination -->
+                                            <div class="swiper-pagination swiper-pagination-white"></div>
+                                            <!-- Add Navigation -->
+                                            <div class="swiper-button-prev"></div>
+                                            <div class="swiper-button-next"></div>
+                                        </div>
+                                    </div>
+                            <div class="timeline-carousel__item-inner">
+                                <h4 class="year">樹屋 1.0</h4>
+                                <p class="timeline-text">搭設時間：2014年<br>地點：同濟中學毛克利叢林<br>座數：兩座<br>依附樹：榕樹、台灣欒樹<br>功能：冒險王活動使用</p>
+                            </div>
+                        </div>
+                        <!--/Timeline item-->
+
+                        <!--Timeline item 2-->
+                        <div class="timeline-carousel__item">
+                                <div class="timeline-carousel__image">
+                                        <div class="swiper-container">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="swiper-zoom-container">
+                                                        <a class="example-image-link" href="img/treeHouse02-01.jpg"
+                                                            data-lightbox="treeHouse02_lightbox">
+                                                            <img class="example-image" src="img/treeHouse02-01.jpg" alt="" />
+                                                        </a>
+        
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="swiper-zoom-container">
+                                                        <a class="example-image-link" href="img/treeHouse02-02.jpg"
+                                                            data-lightbox="treeHouse02_lightbox">
+                                                            <img class="example-image" src="img/treeHouse02-02.jpg" alt="" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="swiper-zoom-container">
+                                                        <a class="example-image-link" href="img/treeHouse02-03.jpg"
+                                                            data-lightbox="treeHouse02_lightbox">
+                                                            <img class="example-image" src="img/treeHouse02-03.jpg" alt="" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="swiper-zoom-container">
+                                                        <a class="example-image-link" href="img/treeHouse02-04.jpg"
+                                                            data-lightbox="treeHouse02_lightbox">
+                                                            <img class="example-image" src="img/treeHouse02-04.jpg" alt="" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="swiper-zoom-container">
+                                                        <a class="example-image-link" href="img/treeHouse02-05.jpg"
+                                                            data-lightbox="treeHouse02_lightbox">
+                                                            <img class="example-image" src="img/treeHouse02-05.jpg" alt="" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="swiper-zoom-container">
+                                                        <a class="example-image-link" href="img/treeHouse02-06.jpg"
+                                                            data-lightbox="treeHouse02_lightbox">
+                                                            <img class="example-image" src="img/treeHouse02-06.jpg" alt="" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="swiper-zoom-container">
+                                                        <a class="example-image-link" href="img/treeHouse02-07.jpg"
+                                                            data-lightbox="treeHouse02_lightbox">
+                                                            <img class="example-image" src="img/treeHouse02-07.jpg" alt="" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Add Pagination -->
+                                            <div class="swiper-pagination swiper-pagination-white"></div>
+                                            <!-- Add Navigation -->
+                                            <div class="swiper-button-prev"></div>
+                                            <div class="swiper-button-next"></div>
+                                        </div>
+                                    </div>
+                            <div class="timeline-carousel__item-inner">
+                                <h4 class="year">樹屋 2.0</h4>
+                                <p class="timeline-text">搭設時間：2015年<br>地點：嘉義縣鹿草鄉重寮國小<br>座數：兩座<br>依附樹：小葉欖仁<br>功能：重寮國小60週年校慶慶祝地景</p>
+                            </div>
+                        </div>
+                        <!--/Timeline item-->
+
+                        <!--Timeline item 3-->
+                        <div class="timeline-carousel__item">
+                                <div class="timeline-carousel__image">
+                                        <div class="swiper-container">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="swiper-zoom-container">
+                                                        <a class="example-image-link" href="img/treeHouse03-01.jpg"
+                                                            data-lightbox="treeHouse03_lightbox">
+                                                            <img class="example-image" src="img/treeHouse03-01.jpg" alt="" />
+                                                        </a>
+        
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="swiper-zoom-container">
+                                                        <a class="example-image-link" href="img/treeHouse03-02.jpg"
+                                                            data-lightbox="treeHouse03_lightbox">
+                                                            <img class="example-image" src="img/treeHouse03-02.jpg" alt="" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="swiper-zoom-container">
+                                                        <a class="example-image-link" href="img/treeHouse03-03.jpg"
+                                                            data-lightbox="treeHouse03_lightbox">
+                                                            <img class="example-image" src="img/treeHouse03-03.jpg" alt="" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="swiper-zoom-container">
+                                                        <a class="example-image-link" href="img/treeHouse03-04.jpg"
+                                                            data-lightbox="treeHouse03_lightbox">
+                                                            <img class="example-image" src="img/treeHouse03-04.jpg" alt="" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="swiper-zoom-container">
+                                                        <a class="example-image-link" href="img/treeHouse03-05.jpg"
+                                                            data-lightbox="treeHouse03_lightbox">
+                                                            <img class="example-image" src="img/treeHouse03-05.jpg" alt="" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="swiper-zoom-container">
+                                                        <a class="example-image-link" href="img/treeHouse03-06.jpg"
+                                                            data-lightbox="treeHouse03_lightbox">
+                                                            <img class="example-image" src="img/treeHouse03-06.jpg" alt="" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="swiper-zoom-container">
+                                                        <a class="example-image-link" href="img/treeHouse03-07.jpg"
+                                                            data-lightbox="treeHouse03_lightbox">
+                                                            <img class="example-image" src="img/treeHouse03-07.jpg" alt="" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="swiper-zoom-container">
+                                                        <a class="example-image-link" href="img/treeHouse03-08.jpg"
+                                                            data-lightbox="treeHouse03_lightbox">
+                                                            <img class="example-image" src="img/treeHouse03-08.jpg" alt="" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Add Pagination -->
+                                            <div class="swiper-pagination swiper-pagination-white"></div>
+                                            <!-- Add Navigation -->
+                                            <div class="swiper-button-prev"></div>
+                                            <div class="swiper-button-next"></div>
+                                        </div>
+                                    </div>
+                            <div class="timeline-carousel__item-inner">
+                                <h4 class="year">樹屋 3.0</h4>
+                                <p class="timeline-text">搭設時間：2016年<br>地點：同濟中學桃花心木林<br>座數：一座<br>依附樹：大王椰子、桃花心木<br>功能：冒險王活動高空垂降、雙索橋基台</p>
+                            </div>
+                        </div>
+                        <!--/Timeline item-->
+
+                        <!--Timeline item 4-->
+                        <div class="timeline-carousel__item">
+                                <div class="timeline-carousel__image">
+                                        <div class="swiper-container">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="swiper-zoom-container">
+                                                        <a class="example-image-link" href="img/treeHouse04-01.jpg"
+                                                            data-lightbox="treeHouse04_lightbox">
+                                                            <img class="example-image" src="img/treeHouse04-01.jpg" alt="" />
+                                                        </a>
+        
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="swiper-zoom-container">
+                                                        <a class="example-image-link" href="img/treeHouse04-02.jpg"
+                                                            data-lightbox="treeHouse04_lightbox">
+                                                            <img class="example-image" src="img/treeHouse04-02.jpg" alt="" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="swiper-zoom-container">
+                                                        <a class="example-image-link" href="img/treeHouse04-03.jpg"
+                                                            data-lightbox="treeHouse04_lightbox">
+                                                            <img class="example-image" src="img/treeHouse04-03.jpg" alt="" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="swiper-zoom-container">
+                                                        <a class="example-image-link" href="img/treeHouse04-04.jpg"
+                                                            data-lightbox="treeHouse04_lightbox">
+                                                            <img class="example-image" src="img/treeHouse04-04.jpg" alt="" />
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            <!-- Add Pagination -->
+                                            <div class="swiper-pagination swiper-pagination-white"></div>
+                                            <!-- Add Navigation -->
+                                            <div class="swiper-button-prev"></div>
+                                            <div class="swiper-button-next"></div>
+                                        </div>
+                                    </div>
+                            <div class="timeline-carousel__item-inner">
+                                <h4 class="year">樹屋 4.0</h4>
+                                <p class="timeline-text">搭設時間：2017年<br>地點：嘉義文創園區（嘉義舊酒廠）<br>座數：ㄧ座<br>依附樹：大王椰子、榕樹<br>功能：園區地景、兒童育樂</p>
+                            </div>
+                        </div>
+                        <!--/Timeline item-->
+
+
+
+                    </div>
+                </section>
+            </div>
         </div>
-    </div>
 
-    <!--end modal-->
-    <div class="dot-navigation-block">
-        <ul class="_list">
-            <li class="active">
-                <a href="#tjScout"><span class="__circle">&nbsp;</span> 同濟童軍團 </a>
-            </li>
-            <li>
-                <a href="#scout"><span class="__circle">&nbsp;</span> 關於童軍 </a>
-            </li>
-            <li>
-                <a href="#campService"><span class="__circle">&nbsp;</span> 營隊服務 </a>
-            </li>
-            <li>
-                <a href="#specialEvent"><span class="__circle">&nbsp;</span> 特別活動 </a>
-            </li>
-            <li>
-                <a href="#treeHouse"><span class="__circle">&nbsp;</span> 樹屋 </a>
-            </li>
-        </ul>
-    </div>
+        <!-- manu -->
+        <div class="dot-navigation-block">
+            <ul class="_list">
+                <li class="active">
+                    <a href="#tjScout"><span class="__circle">&nbsp;</span> 同濟童軍團 </a>
+                </li>
+                <li>
+                    <a href="#scout"><span class="__circle">&nbsp;</span> 關於童軍 </a>
+                </li>
+                <li>
+                    <a href="#campService"><span class="__circle">&nbsp;</span> 營隊服務 </a>
+                </li>
+                <li>
+                    <a href="#specialEvent"><span class="__circle">&nbsp;</span> 特別活動 </a>
+                </li>
+                <li>
+                    <a href="#treeHouse"><span class="__circle">&nbsp;</span> 樹屋 </a>
+                </li>
+            </ul>
+        </div>
 
-    <!-- JS -->
-    <script src="js/jquery-3.3.1.min.js"></script>
+        <!-- JS -->
+        <script src="js/jquery-3.3.1.min.js"></script>
 
-    <!-- 滾動模糊 -->
-    <script src="js/crossfade.jquery.js"></script>
-    <script>
-        $(function () {
-            $('#cover').crossfade(options);
-        });
-        $(function () {
-            // Initialize both crossfade examples
-            $('#cover').crossfade({
-                start: 'img/background.jpg',
-                end: 'img/background-blur.jpg',
-                threshold: 0.2,
-                backgroundPosition: 'center center'
+        <!-- 滾動模糊 -->
+        <script src="js/crossfade.jquery.js"></script>
+        <script>
+            $(function () {
+                $('#cover').crossfade(options);
             });
-        });
-    </script>
-
-    <!-- Scout -->
-    <!-- jquery modal -->
-    <script src="js/jquery.modal.min.js"></script>
-    <script src="js/popbox.js"></script>
-    <script type="text/javascript">
-        var popbox = new Popbox({
-            blur: true,
-            overlay: true,
-        });
-    </script>
-
-    <!-- timeline -->
-    <script src="js/vertical-timeline.js"></script>
-    <script>
-        function VerticalTimeline(element) {
-            this.element = element;
-            this.blocks = this.element.getElementsByClassName("js-cd-block");
-            this.images = this.element.getElementsByClassName("js-cd-img");
-            this.contents = this.element.getElementsByClassName("js-cd-content");
-            // ...
-        };
-
-        VerticalTimeline.prototype.showBlocks = function () {
-            var self = this;
-            for (var i = 0; i < this.blocks.length; i++) {
-                (function (i) {
-                    if (self.contents[i].classList.contains("cd-is-hidden") && self.blocks[i].getBoundingClientRect()
-                        .top <= window.innerHeight * self.offset) {
-                        // add bounce-in animation
-                        self.images[i].classList.add("cd-timeline__img--bounce-in");
-                        self.contents[i].classList.add("cd-timeline__content--bounce-in");
-                        self.images[i].classList.remove("cd-is-hidden");
-                        self.contents[i].classList.remove("cd-is-hidden");
-                    }
-                })(i);
-            }
-        };
-    </script>
-
-    <!-- Camp Service -->
-    <!-- swiper -->
-    <script src="js/swiper.min.js"></script>
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-    </script>
-
-    <!-- lightbox -->
-    <script src="js/lightbox.min.js"></script>
-
-    <!-- specialEvent -->
-    <!-- jScrollability -->
-    <script src="js/jScrollability.min.js"></script>
-
-    <!-- menu -->
-    <Script>
-        function checkScrollPosition() {
-            var navBlock = $('.dot-navigation-block');
-            var scrollPos = $(document).scrollTop();
-            navBlock.find('a').each(function () {
-                // If window was move over block positon
-                var block = $($(this).attr('href'));
-                if ((block.position().top) <= scrollPos + 5 && (block.position().top) + block.height() >
-                    scrollPos + 5) {
-                    // remove all active class and add active to the only one we want
-                    navBlock.find('li').removeClass('active');
-                    $(this).parent('li').addClass('active');
-                } else {
-                    $(this).parent('li').removeClass('active');
-                }
-            });
-        }
-
-
-        $(window).on('scroll', function () {
-            checkScrollPosition();
-        });
-
-        $(document).ready(function () {
-            var navBlock = $('.dot-navigation-block');
-            navBlock.find('a').on('click', function (e) {
-                e.preventDefault();
-                $(document).off('scroll');
-                // Get block distance from top of browser
-                var block = $(this).attr('href');
-                var blockPosition = $(block).offset().top;
-                // Animate window to that position
-                $('html, body').animate({
-                    scrollTop: blockPosition
-                }, 600, 'swing', function () {
-                    checkScrollPosition();
+            $(function () {
+                // Initialize both crossfade examples
+                $('#cover').crossfade({
+                    start: 'img/background.jpg',
+                    end: 'img/background-blur.jpg',
+                    threshold: 0.2,
+                    backgroundPosition: 'center center'
                 });
             });
-        });
-    </Script>
+        </script>
+
+        <!-- Scout -->
+        <!-- jquery modal -->
+        <script src="js/jquery.modal.min.js"></script>
+        <script src="js/popbox.js"></script>
+        <script type="text/javascript">
+            var popbox = new Popbox({
+                blur: true,
+                overlay: true,
+            });
+        </script>
+
+        <!-- timeline -->
+        <script src="js/vertical-timeline.js"></script>
+        <script>
+            jQuery(document).ready(function($){
+	var $timeline_block = $('.cd-timeline-block');
+
+	//hide timeline blocks which are outside the viewport
+	$timeline_block.each(function(){
+		if($(this).offset().top > $(window).scrollTop()+$(window).height()*0.75) {
+			$(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
+		}
+	});
+
+	//on scolling, show/animate timeline blocks when enter the viewport
+	$(window).on('scroll', function(){
+		$timeline_block.each(function(){
+			if( $(this).offset().top <= $(window).scrollTop()+$(window).height()*0.75 && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) {
+				$(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+			}
+		});
+	});
+});
+        </script>
+
+        <!-- Camp Service -->
+        <!-- swiper -->
+        <script src="js/swiper.min.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                spaceBetween: 30,
+                loop: true,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 1000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+
+        <!-- lightbox -->
+        <script src="js/lightbox.min.js"></script>
+
+        <!-- specialEvent -->
+        <!-- jScrollability -->
+        <script src="js/jScrollability.min.js"></script>
+        <!-- AOS -->
+        <script src="js/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <!-- treehouse -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/slick.js"></script>
+        <script>
+            $.js = function (el) {
+                return $('[data-js=' + el + ']')
+            };
+
+            function carousel() {
+                $.js('timeline-carousel').slick({
+                    infinite: false,
+                    arrows: true,
+                    arrows: true,
+                    prevArrow: '<div class="slick-prev"> <div class="btn mr-3 btn-warning d-flex justify-content-center align-items-center"> <div>Previous</div><svg class="ml-1" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve"> <path d="M10.1,19.1l1.5-1.5L7,13h14.1v-2H7l4.6-4.6l-1.5-1.5L3,12L10.1,19.1z"/> </svg></div></div>',
+                    nextArrow: '<div class="slick-next"> <div class="btn btn-warning d-flex justify-content-center align-items-center"> <svg class="mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="M 14 4.9296875 L 12.5 6.4296875 L 17.070312 11 L 3 11 L 3 13 L 17.070312 13 L 12.5 17.570312 L 14 19.070312 L 21.070312 12 L 14 4.9296875 z"/> </svg> <div>Next</div></div></div>',
+                    dots: true,
+                    autoplay: false,
+                    speed: 1100,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    responsive: [{
+                        breakpoint: 800,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }]
+                });
+            }
+
+            carousel();
+        </script>
+
+        <!-- menu -->
+        <Script>
+            function checkScrollPosition() {
+                var navBlock = $('.dot-navigation-block');
+                var scrollPos = $(document).scrollTop();
+                navBlock.find('a').each(function () {
+                    // If window was move over block positon
+                    var block = $($(this).attr('href'));
+                    if ((block.position().top) <= scrollPos + 5 && (block.position().top) + block.height() >
+                        scrollPos + 5) {
+                        // remove all active class and add active to the only one we want
+                        navBlock.find('li').removeClass('active');
+                        $(this).parent('li').addClass('active');
+                    } else {
+                        $(this).parent('li').removeClass('active');
+                    }
+                });
+            }
+
+
+            $(window).on('scroll', function () {
+                checkScrollPosition();
+            });
+
+            $(document).ready(function () {
+                var navBlock = $('.dot-navigation-block');
+                navBlock.find('a').on('click', function (e) {
+                    e.preventDefault();
+                    $(document).off('scroll');
+                    // Get block distance from top of browser
+                    var block = $(this).attr('href');
+                    var blockPosition = $(block).offset().top;
+                    // Animate window to that position
+                    $('html, body').animate({
+                        scrollTop: blockPosition
+                    }, 600, 'swing', function () {
+                        checkScrollPosition();
+                    });
+                });
+            });
+        </Script>
 </body>
 
 </html>

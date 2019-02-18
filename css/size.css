@@ -3,7 +3,8 @@
     height: 100vh;
 }
 
-.inbox_size{
+.inbox_size,
+.specialEvent_inbox{
     width: 1170px;
     height: 660px;
 }
@@ -51,7 +52,105 @@
 }
 
 
+@media (max-width: 1280px) {
+    .inbox_size,
+    .specialEvent_inbox{
+        width: 768px;
+        height: 440px;
+    }
+
+    .HKUK{
+        width: 384px;
+        height: 440px;
+    }
+    
+    #HKtext,
+    #UKtext{
+        width: 274px;
+        height: 230px;
+    }
+
+    #HKpicL,
+    #UKpicL{
+        width: 274px;
+        height: 210px;
+    }
+    
+    #HKpicS01,
+    #HKpicS02,
+    #UKpicS01,
+    #UKpicS02{
+        width: 110px;
+        height: 115px;
+    }
 
 
+    #HKpicS03,
+    #HKpicS04,
+    #UKpicS03,
+    #UKpicS04{
+        width: 110px;
+        height: 105px;
+    }
+}
+
+@media (max-width: 425px) {
+    .inbox_size{
+        width: 95%;
+        height: 75vh;
+    }
+
+    .tjpic_size{
+        width: 100%;
+        height: 30vh;
+    }
+    
+    .tjtext_size{
+        width: 100%;
+        height: 70vh;
+    }
+    .specialEvent_inbox{
+        width: 95%;
+        height: 150vh;
+    }
+    .HKUK{
+        width: 100%;
+        height: 75vh;
+    
+    }
+    
+    #HKtext,
+    #UKtext{
+        width: 70%;
+        height: 40vh;
+    }
+
+    #HKpicL,
+    #UKpicL{
+        width: 66%;
+        height: 35vh;
+    }
+    
+    #HKpicS01,
+    #HKpicS02,
+    #UKpicS01,
+    #UKpicS02{
+        width: 30%;
+        height: 20vh;
+    }
+
+
+    #HKpicS03,
+    #HKpicS04,
+    #UKpicS03,
+    #UKpicS04{
+        width: 34%;
+        height: 17.5vh;
+    }
+    .specialEvent_footer_size{
+        width: 100%;
+        height: 10vh;
+    }
+}
 
 

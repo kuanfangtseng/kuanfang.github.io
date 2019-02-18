@@ -4,7 +4,7 @@
     position: fixed;
     top: 200px;
     left: 50px;
-    z-index: 2;
+    z-index: 9999;
     padding: 10px 20px;
     background-color: rgba(0,0,0,0.4);
     border-radius: 4px
@@ -43,4 +43,24 @@
   .dot-navigation-block ul li.active .__circle {
     background-color: rgb(0, 132, 255);
     border-color: #fff
+  }
+
+  @media (max-width: 425px) {
+    .dot-navigation-block {
+      top: 20px;
+      left: 5px;
+      padding: 1px 5px;
+    }
+
+    .dot-navigation-block ul li a .__circle {
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      margin-right: 5px;
+      background-color: #fff;
+      border: 2px solid rgb(0, 132, 255);
+      border-radius: 50em;
+      position: relative;
+      top: 2px
+    }
   }
