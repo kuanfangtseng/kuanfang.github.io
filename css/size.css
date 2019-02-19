@@ -26,7 +26,8 @@
 }
 
 .campService_footer_size,
-.specialEvent_header_size{
+.specialEvent_header_size,
+.specialEvent_footer_size{
     width: 100%;
     height: 10vh;
 }
@@ -46,10 +47,7 @@
     height: 165px;
 }
 
-.specialEvent_footer_size{
-    width: 100%;
-    height: 1vh;
-}
+
 
 
 @media (max-width: 1280px) {
@@ -109,6 +107,15 @@
         width: 100%;
         height: 70vh;
     }
+    .campService_header_size{
+        width: 100%;
+        height: 50vh;
+    }
+    
+.specialEvent_header_size{
+    width: 100%;
+    height: 15vh;
+}
     .specialEvent_inbox{
         width: 95%;
         height: 150vh;
@@ -122,13 +129,13 @@
     #HKtext,
     #UKtext{
         width: 70%;
-        height: 40vh;
+        height: 45vh;
     }
 
     #HKpicL,
     #UKpicL{
         width: 66%;
-        height: 35vh;
+        height: 30vh;
     }
     
     #HKpicS01,
@@ -136,7 +143,7 @@
     #UKpicS01,
     #UKpicS02{
         width: 30%;
-        height: 20vh;
+        height: 22.5vh;
     }
 
 
@@ -145,12 +152,11 @@
     #UKpicS03,
     #UKpicS04{
         width: 34%;
-        height: 17.5vh;
+        height: 15vh;
     }
-    .specialEvent_footer_size{
-        width: 100%;
-        height: 10vh;
-    }
+
+    
+    
 }
 
 

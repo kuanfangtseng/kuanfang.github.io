@@ -159,16 +159,18 @@ p{
     background-image: url(../img/background_lowpoly-red.jpg);
     background-size: cover;
 }
-
 #specialEvent{
+    width: 100%;
     display: flex;
-    justify-content:space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .specialEvent_header{
     display: flex;
     justify-content: center;
-    align-items:flex-end;
+    align-items: center;
 }
 .specialEvent_inbox{
     display: flex;

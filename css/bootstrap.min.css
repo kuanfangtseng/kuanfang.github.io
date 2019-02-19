@@ -177,7 +177,7 @@ samp {
 
 pre {
     margin-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 1px;
     overflow: auto;
     -ms-overflow-style: scrollbar
 }
@@ -529,7 +529,7 @@ kbd kbd {
 
 pre {
     display: block;
-    font-size: 87.5%;
+    font-size: 50%;
     color: #212529
 }
 

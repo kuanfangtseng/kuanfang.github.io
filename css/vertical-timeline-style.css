@@ -260,6 +260,8 @@ header h1 {
   float: left;
   padding: .8em 0;
   opacity: .7;
+  background-color: aquamarine;
+  border-radius: 5px;
 }
 .cd-timeline-content::before {
   content: '';
